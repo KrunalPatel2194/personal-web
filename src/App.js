@@ -1,11 +1,9 @@
-import logo from './logo.svg';
 import './App.css';
 import Header from './components/header/Header';
 import Home from './components/home/home';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import About from './components/about/about';
 import Skills from './components/skills/skills';
-import Services from './components/servicesc/services';
 import Portfolio from './components/portfolio/portfolio';
 import Contact from './components/contact/contact';
 import Qualification from './components/qualification/Qualification';
