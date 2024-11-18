@@ -40,7 +40,7 @@ const ContactMe = () => {
                 <div className="contact__qr-container">
                     <h3>Scan to Visit</h3>
                     <QRCodeCanvas
-                        value="https://your-website.com" // Replace with your website URL
+                        value="https://krunal-patel.me" // Replace with your website URL
                         size={150}
                         bgColor="transparent"
                         fgColor="#000"
