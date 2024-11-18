@@ -1,0 +1,123 @@
+.contact {
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: linear-gradient(135deg, #f8d7ff, #d7eaff); */
+    height: 100vh;
+}
+
+.contact__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+    max-width: 900px;
+}
+
+.contact__form-container {
+    flex: 1;
+    padding: 2rem;
+    /* background: rgba(255, 255, 255, 0.2); Semi-transparent background */
+    /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); */
+    backdrop-filter: blur(15px); /* Frosted glass effect */
+    border-radius: .5rem;
+    margin-right: 5rem;
+    /* border: 1px solid rgba(255, 255, 255, 0.3); Subtle border for the glass effect */
+}
+
+.contact__title {
+    font-size: var(--h2-font-size);
+    text-align: center;
+    color: var(--title-color-dark);
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.contact__form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.contact__input-group {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.contact__input {
+    width: 100%;
+    padding: 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: var(--normal-font-size);
+    background-color: rgba(255, 255, 255, 0.7); /* Transparent input background */
+    color: var(--text-color);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.contact__input:focus {
+    outline: none;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.contact__textarea {
+    resize: none;
+    height: 120px;
+}
+
+.contact__button {
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    font-size: var(--normal-font-size);
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.contact__button:hover {
+    transform: translateY(-3px);
+    background-color: var(--primary-color-dark);
+}
+
+.contact__qr-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 2rem;
+    flex: 0.4;
+    /* background: rgba(255, 255, 255, 0.2); Semi-transparent background */
+    /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); */
+    backdrop-filter: blur(15px); /* Frosted glass effect */
+    border-radius: 1.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Subtle border for the glass effect */
+    text-align: center;
+}
+
+.contact__qr-container h3 {
+    font-size: var(--normal-font-size);
+    color: var(--title-color-dark);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .contact__wrapper {
+        flex-direction: column;
+    }
+
+    .contact__form-container,
+    .contact__qr-container {
+        flex: none;
+        width: 100%;
+    }
+}
